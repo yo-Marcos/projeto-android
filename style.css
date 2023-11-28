@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'idroid';
+    src:url('source/fontes/idroid.otf') format('opentype');
+
+}
+/*IMPORTANTE:
+É possível criar variáveis no CSS usando o ":root", dentro do root, você sí precisa colocar "--nomeda_variável_semespaço: valor;
+
+Por exemplo:
+:root{
+    --cor0: #00000;
+}
+*/
+
+
+/*IMPORTANTE 2:
+
+É possível também, selecionar TODOS os seletores de uma vez para uma configuração padrão utilizando: "* {}" que ajuda para tirar o padding e a margin padrão que muitas vezes tem.
+
+Também é possível fazer assim: "seletor1, seletor2, seletor3...{}" porém,além de ficar feio, vai dar trabalho, sendo mais util utilizar como configuração padrão para seletores expecíficos!  
+
+*/
+
+.idroid{
+    font-family:idroid;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #84E1AD;
+}
+/*----------------------------------HEADER------------------------------------*/
+header{
+    background-image: linear-gradient(to bottom, #84E1AD, #1f382a);
+}
+
+header > p{
+    text-align: center;
+    color: white;
+}
+
+h1{
+    color:white;
+    text-align: center;
+}
+
+nav{
+    font-weight: bold;
+    padding: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.466);
+    
+}
+nav > a{
+    color: white;
+    margin-left: 12px;
+    padding: 11px;
+}
+nav > a:hover{
+    text-decoration: underline;
+    background-color: #84E1AD;
+    color: black;
+}
+/*---------------------------------MAIN-----------------------------------*/
+main{
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.445);
+}
+img{
+    width: 100%;
+}
+h2{
+    color:#08833d;
+    
+}
+h3{
+    color: #13994d;
+    background-color:#84e1ac63;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #13994d;
+}
+a:hover{
+    text-decoration: underline;
+    background-color: #13994d2f;
+}
+p{
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 14px;
+}
+
+section#video{
+    text-align: center;
+    background-color: #1f382a;
+    padding: 20px;
+}
+
+section#saibamais{
+    background-color: #84E1AD;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+#saibamais > p{
+    padding: 10px;
+}
+h4{
+    background-color: #008539;
+    padding: 10px;
+    border-radius: 20px 20px 0px 0px;
+    color: white;
+}
+
+footer{
+    background-color: #1f382a;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+}
